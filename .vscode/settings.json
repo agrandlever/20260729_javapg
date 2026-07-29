@@ -1,0 +1,13 @@
+{
+  // Java拡張機能が処理しないフォルダーを指定する
+  "java.project.resourceFilters": [
+    // 初期設定の除外対象を残す
+    "node_modules",
+
+    // 「.」は正規表現で特別な意味を持つため「\\」で無効化する
+    "\\.git",
+
+    // .history内のJavaファイルをJavaの検査対象から外す
+    "\\.history"
+  ]
+}
